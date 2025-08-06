@@ -79,16 +79,14 @@
 </div>
 
   <script>
-    function startGame(mapImage) {
-  localStorage.setItem("selectedMap", mapImage);
-  window.location.href = "gameplay.html"; // thay vì "index.html"
-}
-
-  </script>
-   <script>
     window.onload = function () {
       window.location.href = "https://dnmint0811.github.io/BenVideoTrailer/"; // thay bằng URL bạn muốn
     };
+    
+    function startGame(mapImage) {
+    localStorage.setItem("selectedMap", mapImage);
+    window.location.href = "gameplay.html"; // thay vì "index.html"
+}
   </script>
 </body>
 </html>
