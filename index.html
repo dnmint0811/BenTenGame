@@ -59,6 +59,15 @@
 </head>
 <body>
  <h1>Chọn nhiệm vụ</h1>
+   <script>
+    window.onload = function () {
+      window.location.href = "https://dnmint0811.github.io/BenVideoTrailer/"; // thay bằng URL bạn muốn
+    };
+    
+    function startGame(mapImage) {
+    localStorage.setItem("selectedMap", mapImage);
+    window.location.href = "gameplay.html"; // thay vì "index.html"
+}
 <div class="map-grid">
   <div class="map-option" onclick="startGame('map1.png')">
     <img src="assets/images/map1.png" alt="Map 1">
@@ -78,15 +87,7 @@
   </div>
 </div>
 
-  <script>
-    window.onload = function () {
-      window.location.href = "https://dnmint0811.github.io/BenVideoTrailer/"; // thay bằng URL bạn muốn
-    };
-    
-    function startGame(mapImage) {
-    localStorage.setItem("selectedMap", mapImage);
-    window.location.href = "gameplay.html"; // thay vì "index.html"
-}
+ 
   </script>
 </body>
 </html>
