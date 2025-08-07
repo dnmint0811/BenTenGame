@@ -4,6 +4,11 @@
   <meta charset="UTF-8">
   <title>Misson Select</title>
   <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+    <script>
+    window.onload = function () {
+      window.location.href = "https://dnmint0811.github.io/BenVideoTrailer/"; // thay bằng URL bạn muốn
+    };
+    </script>
   <style>
     body {
       margin: 0;
@@ -59,16 +64,7 @@
 </head>
 <body>
  <h1>Chọn nhiệm vụ</h1>
-   <script>
-    window.onload = function () {
-      window.location.href = "https://dnmint0811.github.io/BenVideoTrailer/"; // thay bằng URL bạn muốn
-    };
-    
-    function startGame(mapImage) {
-    localStorage.setItem("selectedMap", mapImage);
-    window.location.href = "gameplay.html"; // thay vì "index.html"
-}
-      </script>
+ 
 <div class="map-grid">
   <div class="map-option" onclick="startGame('map1.png')">
     <img src="assets/images/map1.png" alt="Map 1">
